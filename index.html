@@ -4,28 +4,92 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Krishna Tour & Travels</title>
+  <meta name="description" content="Krishna Tour & Travels – Tour packages, cab services, pilgrimage and travel solutions." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <header>
-    <h1>Krishna Tour & Travels</h1>
-    <p>Trusted Travel Partner</p>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <h1>Krishna Tour & Travels</h1>
+      <p>Your Trusted Travel Partner</p>
+    </div>
   </header>
 
-  <section>
-    <h2>About Us</h2>
-    <p>
-      We provide tour packages, cab services, and travel solutions across India.
-    </p>
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>
+        Krishna Tour & Travels is a trusted travel agency providing reliable
+        tour packages, cab services, and travel solutions across India.
+        We focus on comfort, safety, and customer satisfaction.
+      </p>
+    </div>
   </section>
 
-  <section>
-    <h2>Contact Us</h2>
-    <p>Phone: +91-XXXXXXXXXX</p>
-    <p>Email: info@krishnatourandtravels.com</p>
+  <!-- SERVICES -->
+  <section id="services" class="section bg-light">
+    <div class="container">
+      <h2>Our Services</h2>
+      <ul class="services">
+        <li>✈️ Domestic & International Tour Packages</li>
+        <li>🚕 Cab & Taxi Services</li>
+        <li>🛕 Pilgrimage Tours</li>
+        <li>🏨 Hotel Bookings</li>
+        <li>🚆 Train & Flight Assistance</li>
+      </ul>
+    </div>
   </section>
 
-  <script src="js/script.js"></script>
+  <!-- GALLERY -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <h2>Gallery</h2>
+      <p>Photos coming soon.</p>
+      <!-- Later you can add images like:
+      <img src="images/office.jpg" />
+      -->
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section bg-light">
+    <div class="container">
+      <h2>Contact Us</h2>
+
+      <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
+      <p><strong>Email:</strong> info@krishnatourandtravels.com</p>
+      <p><strong>Address:</strong> Your office address here</p>
+
+      <!-- CONTACT FORM (placeholder for now) -->
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Krishna Tour & Travels. All rights reserved.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
