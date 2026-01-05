@@ -4,26 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Krishna Tour & Travels</title>
-  <meta name="description" content="Krishna Tour & Travels – Tour packages, cab services, pilgrimage and travel solutions." />
+  <meta name="description" content="Krishna Tour & Travels – Tour packages, cabs, pilgrimage tours and travel solutions." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container">
+  <!-- HERO -->
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
       <h1>Krishna Tour & Travels</h1>
-      <p>Your Trusted Travel Partner</p>
+      <p>Your Journey, Our Responsibility</p>
+      <a href="#contact" class="btn-primary">Contact Us</a>
     </div>
   </header>
 
   <!-- NAV -->
-  <nav class="nav">
+  <nav class="navbar">
     <div class="container">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
+      <span class="logo">Krishna Travels</span>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
   </nav>
 
@@ -31,10 +36,10 @@
   <section id="about" class="section">
     <div class="container">
       <h2>About Us</h2>
-      <p>
-        Krishna Tour & Travels is a trusted travel agency providing reliable
-        tour packages, cab services, and travel solutions across India.
-        We focus on comfort, safety, and customer satisfaction.
+      <p class="center-text">
+        Krishna Tour & Travels is a trusted travel agency offering tour packages,
+        cab services, pilgrimage tours, and complete travel assistance.
+        We are committed to comfort, safety, and customer satisfaction.
       </p>
     </div>
   </section>
@@ -43,13 +48,24 @@
   <section id="services" class="section bg-light">
     <div class="container">
       <h2>Our Services</h2>
-      <ul class="services">
-        <li>✈️ Domestic & International Tour Packages</li>
-        <li>🚕 Cab & Taxi Services</li>
-        <li>🛕 Pilgrimage Tours</li>
-        <li>🏨 Hotel Bookings</li>
-        <li>🚆 Train & Flight Assistance</li>
-      </ul>
+      <div class="cards">
+        <div class="card">
+          <h3>✈️ Tour Packages</h3>
+          <p>Domestic & international holiday packages at best prices.</p>
+        </div>
+        <div class="card">
+          <h3>🚕 Cab Services</h3>
+          <p>Reliable cab & taxi services for local and outstation travel.</p>
+        </div>
+        <div class="card">
+          <h3>🛕 Pilgrimage Tours</h3>
+          <p>Special spiritual & pilgrimage tour packages.</p>
+        </div>
+        <div class="card">
+          <h3>🏨 Hotel Booking</h3>
+          <p>Comfortable hotels with trusted partners.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -57,10 +73,13 @@
   <section id="gallery" class="section">
     <div class="container">
       <h2>Gallery</h2>
-      <p>Photos coming soon.</p>
-      <!-- Later you can add images like:
-      <img src="images/office.jpg" />
-      -->
+      <div class="gallery">
+        <div class="gallery-box">Image</div>
+        <div class="gallery-box">Image</div>
+        <div class="gallery-box">Image</div>
+        <div class="gallery-box">Image</div>
+      </div>
+      <p class="center-text small">Add your travel, office or vehicle photos here</p>
     </div>
   </section>
 
@@ -69,26 +88,26 @@
     <div class="container">
       <h2>Contact Us</h2>
 
-      <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
-      <p><strong>Email:</strong> info@krishnatourandtravels.com</p>
-      <p><strong>Address:</strong> Your office address here</p>
+      <div class="contact-grid">
+        <div>
+          <p><strong>📞 Phone:</strong> +91-XXXXXXXXXX</p>
+          <p><strong>📧 Email:</strong> info@krishnatourandtravels.com</p>
+          <p><strong>📍 Address:</strong> Your office address here</p>
+        </div>
 
-      <!-- CONTACT FORM (placeholder for now) -->
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message"></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container">
-      <p>© 2026 Krishna Tour & Travels. All rights reserved.</p>
-    </div>
+    <p>© 2026 Krishna Tour & Travels. All rights reserved.</p>
   </footer>
 
 </body>
