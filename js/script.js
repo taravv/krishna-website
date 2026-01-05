@@ -1,0 +1,1 @@
+console.log("Krishna Tour & Travels website loaded");
