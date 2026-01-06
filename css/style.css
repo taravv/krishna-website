@@ -5,20 +5,30 @@ body {
   color: #333;
 }
 
-/* TOP BAR */
-.topbar {
-  background: #6a2c91;
-  color: #fff;
-  padding: 15px 5%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.navbar-light .navbar-nav .nav-link {
+  color: #000;
+  font-weight: 500;
 }
-.topbar nav a {
-  color: #fff;
-  margin-left: 20px;
-  text-decoration: none;
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #6a2c91; /* purple hover */
 }
+
+/* Brand gradient text */
+.brand-gradient {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(
+    90deg,
+    #00AB9C,
+    #004D65
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  color: #000;
+}
+
 
 /* HERO */
 .hero {
@@ -112,13 +122,53 @@ body {
   border: 2px solid #e8cd1a;
 }
 
+/* CERTIFICATION SLIDER */
+.cert-slider {
+  overflow: hidden;
+  max-width: 960px; /* 3 x 300 + gap */
+  margin: auto;
+}
+
+.cert-track {
+  display: flex;
+  gap: 30px;
+  animation: slideCerts 18s linear infinite;
+}
+
+.cert-track img {
+  width: 300px;
+  height: 200px;
+  object-fit: contain;
+  background: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ANIMATION */
+@keyframes slideCerts {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 /* GALLERY */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
 }
-.gallery img { width: 100%; border-radius: 8px; }
+
+.gallery img {
+  width: 100%;
+  height: 220px;              /* FIXED HEIGHT */
+  object-fit: cover;          /* KEY LINE */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
 
 /* WHATSAPP */
 .whatsapp-float {
